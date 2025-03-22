@@ -9,8 +9,8 @@ def from_file_to_dict(file_name):
         return json.load(file)
 def load_bigrams(path=""):
     global dict_ose, dict_rus
-    dict_ose = from_file_to_dict(path + "../bigrams/bigram_normal_ose.json")
-    dict_rus = from_file_to_dict(path + "../bigrams/bigram_normal_rus.json")
+    dict_ose = from_file_to_dict("bigrams/bigram_normal_ose.json")
+    dict_rus = from_file_to_dict("bigrams/bigram_normal_rus.json")
     #print(len(dict_rus), len(dict_ose))
 
 def is_ose_word(word):
